@@ -12,6 +12,9 @@ app.get('/', (req, res) => {
 
 app.use('/posts', postsRoute);
 
+app.get('*', () => {
+    res.status(404).send('Route not found!')
+})
 
 const PORT = process.env.PORT;
 
