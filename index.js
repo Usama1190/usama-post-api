@@ -7,7 +7,7 @@ dotenv.config();
 
 
 app.get('/', (req, res) => {
-    res.status(200).send('Welcome to Usama Posts APIs');
+    res.status(200).send('Welcome to Usama Posts APIs. To visit enter /posts');
 })
 
 app.use('/posts', postsRoute);
